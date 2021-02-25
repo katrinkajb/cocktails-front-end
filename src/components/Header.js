@@ -1,4 +1,4 @@
-import React, { Component } from 'react'
+import React, { Component } from 'react';
 import '../App.css';
 import { NavLink, withRouter } from 'react-router-dom';
 
@@ -10,6 +10,9 @@ export default withRouter(class Header extends Component {
                 <NavLink exact activeClassName="selected" to="/">
                     Home
                 </NavLink>
+                {/* <NavLink exact activeClassName="selected" to="/create">
+                    Create
+                </NavLink> */}
             </header>
         )
     }
