@@ -36,3 +36,11 @@
     transform: rotate(360deg);
   }
 }
+
+.list {
+  display: flex;
+}
+
+.cocktail-card {
+  border: 2px black solid;
+}
