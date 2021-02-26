@@ -10,9 +10,9 @@ export default withRouter(class Header extends Component {
                 <NavLink exact activeClassName="selected" to="/">
                     Home
                 </NavLink>
-                {/* <NavLink exact activeClassName="selected" to="/create">
+                <NavLink exact activeClassName="selected" to="/create">
                     Create
-                </NavLink> */}
+                </NavLink>
             </header>
         )
     }

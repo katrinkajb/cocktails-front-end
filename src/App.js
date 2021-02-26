@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 import './App.css';
 import {BrowserRouter as Router, Route, Switch } from 'react-router-dom';
 import Details from './components/Details';
-// import Create from './components/Create';
+import Create from './components/Create';
 import Header from './components/Header';
 import Home from './components/Home';
 
@@ -23,11 +23,11 @@ export default class App extends Component {
               exact
               render={(routerProps) => <Details {...routerProps} />} 
             />
-            {/* <Route 
+            <Route 
               path="/create" 
               exact
               render={(routerProps) => <Create {...routerProps} />} 
-            /> */}
+            />
           </Switch>
         </Router>
       </div>
