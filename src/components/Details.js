@@ -20,7 +20,7 @@ export default class Details extends Component {
         this.setState({
             name: cocktail.name,
             description: cocktail.description,
-            category: category,
+            category: category.name,
             category_id: cocktail.category_id,
             price: cocktail.price,
             ingredients: cocktail.ingredients
