@@ -5,8 +5,8 @@ import { NavLink, withRouter } from 'react-router-dom';
 export default withRouter(class Header extends Component {
     render() {
         return (
-            <header>
-                <p className='welcome'>Welcome to KB's Cocktails Front End</p>
+            <header className='App-header'>
+                <div className='welcome'>Welcome to KB's Cocktails (now with API!)</div>
                 <NavLink exact activeClassName="selected" to="/">
                     Home
                 </NavLink>
