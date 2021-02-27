@@ -6,7 +6,7 @@ export default withRouter(class Header extends Component {
     render() {
         return (
             <header className='App-header'>
-                <div className='welcome'>Welcome to KB's Cocktails (now with API!)</div>
+                <div className='welcome'>Welcome to KB's Cocktails (now featuring API!)</div>
                 <NavLink exact activeClassName="selected" to="/">
                     Home
                 </NavLink>

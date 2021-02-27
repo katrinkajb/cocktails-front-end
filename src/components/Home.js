@@ -9,9 +9,7 @@ export default class Home extends Component {
     }
 
     componentDidMount = async () => {        
-        const cocktails = await getCocktails();
-console.log(cocktails)
-        
+        const cocktails = await getCocktails();        
 
         this.setState({
             cocktails: cocktails,

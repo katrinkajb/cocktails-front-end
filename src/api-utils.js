@@ -6,7 +6,6 @@ export async function getCategoriesById(category_id) {
     const categories = await request.get(`${URL}/categories`);
     
     const categoryName = categories.body.find(category => category.id === category_id);
-    console.log(categoryName.name);
     return categoryName;
 }
 
@@ -18,6 +17,13 @@ export async function getCocktails() {
 
 export async function getCocktailById(id) {
     const response = await request.get(`${URL}/cocktails/${id}`);
+
+    return response.body;
+}
+
+export async function createCocktail(newCocktail) {
+    const response = await request.post(`${URL}/cocktails`)
+    .send(newCocktail);
 
     return response.body;
 }

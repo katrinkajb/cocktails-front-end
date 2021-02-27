@@ -47,3 +47,17 @@ body {
 Link {
   text-decoration: none;
 }
+
+.create-input{
+  margin: 5px;
+}
+
+.create-card {
+  border: 1px black solid;
+  background-color: rgb(241, 167, 141);
+  margin: 15px;
+  color: darkslategray;
+  border-radius: 15px;
+  width: 20em;
+  padding: 50px;
+}
