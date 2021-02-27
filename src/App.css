@@ -24,16 +24,6 @@ body {
   justify-content: center;
 }
 
-.cocktail-card {
-  border: 1px black solid;
-  background-color: rgb(241, 167, 141);
-  margin: 15px;
-  color: darkslategray;
-  border-radius: 15px;
-  width: 20em;
-  padding: 10px;
-}
-
 .cocktail-name {
   font-size: x-large;
   font-weight: 400;
@@ -52,12 +42,22 @@ Link {
   margin: 5px;
 }
 
-.create-card {
-  border: 1px black solid;
+.cocktail-card {
+  border: 1px darkslategray solid;
   background-color: rgb(241, 167, 141);
   margin: 15px;
   color: darkslategray;
   border-radius: 15px;
   width: 20em;
   padding: 50px;
+  align-content: space-between;
+}
+
+button {
+  border-radius: 5px;
+  margin-top: 15px;
+}
+
+.delete-button {
+  background-color: firebrick;
 }

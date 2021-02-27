@@ -42,23 +42,23 @@ export default class Create extends Component {
     render() {
         return (
             <div className='list'>
-                <div className='create-card'>
+                <div className='cocktail-card'>
                     <form onSubmit={this.handleSubmit}>
                         <div>
                             <label className='create-input'>
-                                Cocktail name
+                                Cocktail name{'\n'}
                                 <input value={this.state.name} onChange={this.handleNameChange} />
                             </label>
                         </div>
                         <div>
                             <label>
-                                Description
+                                Description{'\n'}
                                 <input value={this.state.description} onChange={this.handleDescriptionChange} /> 
                             </label>
                         </div>
                         <div>
                             <label>
-                            Select a category
+                            Select a category{'\n'}
                                 <select value={this.state.category} onChange={this.handleCategoryChange}>
                                     <option value={1}>Strong</option>
                                     <option value={2}>Creamy</option>
@@ -69,13 +69,13 @@ export default class Create extends Component {
                         </div>
                         <div>
                             <label>
-                                Price
+                                Price{'\n'}
                                 <input value={this.state.price} type="number" onChange={this.handlePriceChange} /> 
                             </label>
                         </div>
                         <div>
                             <label>
-                                Ingredients
+                                Ingredients{'\n'}
                                 <input value={this.state.ingredients} onChange={this.handleIngredientsChange} /> 
                             </label>
                         </div>

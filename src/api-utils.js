@@ -27,3 +27,15 @@ export async function createCocktail(newCocktail) {
 
     return response.body;
 }
+
+export async function updateCocktail(id) {
+    const response = await request.put(`${URL}//cocktails/${id}`);
+
+    return response.body;
+}
+
+export async function deleteCocktail(id) {
+    const response = await request.delete(`${URL}//cocktails/${id}`);
+
+    return response.body;
+}
