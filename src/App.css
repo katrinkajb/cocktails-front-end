@@ -1,5 +1,6 @@
-.App {
+body {
   text-align: center;
+  background-color: rgb(91, 126, 97);
 }
 
 .App-logo {
@@ -7,15 +8,8 @@
   pointer-events: none;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
 .App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+  background-color: #7c818d;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -24,23 +18,46 @@
   color: white;
 }
 
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
-}
-
 .list {
   display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.cocktail-name {
+  font-size: x-large;
+  font-weight: 400;
+}
+
+.cocktail-ingredients {
+  font-size: small;
+  font-style: italic;
+}
+
+Link {
+  text-decoration: none;
+}
+
+.create-input{
+  margin: 5px;
 }
 
 .cocktail-card {
-  border: 2px black solid;
+  border: 1px darkslategray solid;
+  background-color: rgb(241, 167, 141);
+  margin: 15px;
+  color: darkslategray;
+  border-radius: 15px;
+  width: 20em;
+  padding: 50px;
+  align-content: space-between;
+}
+
+button {
+  border-radius: 5px;
+  margin-top: 15px;
+}
+
+.delete-button {
+  background-color: firebrick;
 }
